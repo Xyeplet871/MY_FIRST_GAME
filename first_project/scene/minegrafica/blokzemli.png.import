@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8o636gi4lmpv"
-path="res://.godot/imported/attack1_down.png-4d79e0dac6586af1011dc9c67748a8d8.ctex"
+uid="uid://bka5lco0o4xig"
+path="res://.godot/imported/blokzemli.png-ee1cf196930ca16385971d8cae6ed6dc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scene/ATTACK 1/attack1_down.png"
-dest_files=["res://.godot/imported/attack1_down.png-4d79e0dac6586af1011dc9c67748a8d8.ctex"]
+source_file="res://scene/minegrafica/blokzemli.png"
+dest_files=["res://.godot/imported/blokzemli.png-ee1cf196930ca16385971d8cae6ed6dc.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c0nsxg6arsj7a"
-path="res://.godot/imported/attack2_up.png-6abfaae9d7ab90c0ff349b69f72aedc5.ctex"
+uid="uid://cyvg55c32xi0a"
+path="res://.godot/imported/MCBlocksBlackOutline.png-481544b96453ff177c9783adb85586b8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scene/ATTACK 2/attack2_up.png"
-dest_files=["res://.godot/imported/attack2_up.png-6abfaae9d7ab90c0ff349b69f72aedc5.ctex"]
+source_file="res://scene/minegrafica/MCBlocksBlackOutline.png"
+dest_files=["res://.godot/imported/MCBlocksBlackOutline.png-481544b96453ff177c9783adb85586b8.ctex"]
 
 [params]
 
