@@ -1,16 +1,19 @@
 [gd_scene format=3 uid="uid://f8p20v10kcvp"]
 
+[ext_resource type="Script" uid="uid://cnu4do1j40ojs" path="res://menu.gd" id="1_lti8b"]
+
 [sub_resource type="FontVariation" id="FontVariation_vsb4k"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_lti8b"]
 
 [node name="menu" type="Node2D" unique_id=1872982590]
+script = ExtResource("1_lti8b")
 
 [node name="play" type="Button" parent="." unique_id=916392895]
-offset_left = 168.0
-offset_top = 60.0
-offset_right = 1025.0
-offset_bottom = 215.0
+offset_left = 157.0
+offset_top = 99.0
+offset_right = 1014.0
+offset_bottom = 254.0
 theme_override_colors/font_color = Color(0.6117647, 0.8980392, 1, 1)
 theme_override_fonts/font = SubResource("FontVariation_vsb4k")
 theme_override_font_sizes/font_size = 52
@@ -26,5 +29,9 @@ theme_override_colors/font_color = Color(0.6117647, 0.8980392, 1, 1)
 theme_override_fonts/font = SubResource("FontVariation_vsb4k")
 theme_override_font_sizes/font_size = 52
 theme_override_icons/icon = SubResource("CanvasTexture_lti8b")
-text = "Exit
+text = "Quit
 "
+
+[connection signal="pressed" from="play" to="." method="_on_play_pressed"]
+[connection signal="button_down" from="Exit" to="." method="_on_exit_button_down"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
