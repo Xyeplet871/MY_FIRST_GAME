@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://xcmwhhneco0i" path="res://scene/pers/ATTACK 1/attack1_down.png" id="1_c5qnt"]
 [ext_resource type="Texture2D" uid="uid://4f8mt80r4kvx" path="res://scene/pers/IDLE/idle_right.png" id="2_8w866"]
 [ext_resource type="Texture2D" uid="uid://bvi8lm8q5kjjd" path="res://scene/pers/RUN/run_down.png" id="3_5g741"]
+[ext_resource type="PackedScene" uid="uid://fd4o6u1j8i2k" path="res://levallll.tscn" id="5_5g741"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3sdac"]
 
@@ -210,3 +211,5 @@ position = Vector2(222, 91.00001)
 scale = Vector2(1, 0.99999994)
 sprite_frames = SubResource("SpriteFrames_gcq8q")
 animation = &"attack"
+
+[node name="Node" parent="." unique_id=1067667707 instance=ExtResource("5_5g741")]

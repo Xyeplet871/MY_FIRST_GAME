@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://f8p20v10kcvp"]
+
+[sub_resource type="FontVariation" id="FontVariation_vsb4k"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_lti8b"]
+
+[node name="menu" type="Node2D" unique_id=1872982590]
+
+[node name="play" type="Button" parent="." unique_id=916392895]
+offset_left = 168.0
+offset_top = 60.0
+offset_right = 1025.0
+offset_bottom = 215.0
+theme_override_colors/font_color = Color(0.6117647, 0.8980392, 1, 1)
+theme_override_fonts/font = SubResource("FontVariation_vsb4k")
+theme_override_font_sizes/font_size = 52
+theme_override_icons/icon = SubResource("CanvasTexture_lti8b")
+text = "Play"
+
+[node name="Exit" type="Button" parent="." unique_id=792627933]
+offset_left = 163.0
+offset_top = 363.0
+offset_right = 1020.0
+offset_bottom = 518.0
+theme_override_colors/font_color = Color(0.6117647, 0.8980392, 1, 1)
+theme_override_fonts/font = SubResource("FontVariation_vsb4k")
+theme_override_font_sizes/font_size = 52
+theme_override_icons/icon = SubResource("CanvasTexture_lti8b")
+text = "Exit
+"
