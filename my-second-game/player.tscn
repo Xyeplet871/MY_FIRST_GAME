@@ -301,3 +301,5 @@ shape = SubResource("CapsuleShape2D_dw050")
 position = Vector2(0, -33)
 sprite_frames = SubResource("SpriteFrames_bfour")
 animation = &"run"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=448174403]

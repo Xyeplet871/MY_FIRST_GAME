@@ -1,0 +1,30 @@
+[gd_resource type="TileSet" format=3 uid="uid://c0rckribv7yvt"]
+
+[ext_resource type="Texture2D" uid="uid://cjo6v18o76evf" path="res://sprites/Tilemaps/Png Files/wood_moss_alt_tileset_0.png" id="1_wqk4p"]
+[ext_resource type="Texture2D" uid="uid://508wof3po6u0" path="res://sprites/Tilemaps/Png Files/stone_drygrass_alt_tileset_2.png" id="2_mceev"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0b4ue"]
+texture = ExtResource("1_wqk4p")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+3:0/0 = 0
+1:1/0 = 0
+0:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f2txt"]
+texture = ExtResource("2_mceev")
+0:0/0 = 0
+1:0/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+3:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+
+[resource]
+sources/0 = SubResource("TileSetAtlasSource_0b4ue")
+sources/1 = SubResource("TileSetAtlasSource_f2txt")
