@@ -10,27 +10,39 @@
 script = ExtResource("1_lti8b")
 
 [node name="play" type="Button" parent="." unique_id=916392895]
-offset_left = 157.0
-offset_top = 99.0
-offset_right = 1014.0
-offset_bottom = 254.0
-theme_override_colors/font_color = Color(0.6117647, 0.8980392, 1, 1)
+offset_left = 471.0
+offset_top = 311.0
+offset_right = 729.8235
+offset_bottom = 421.0
+theme_override_colors/font_color = Color(0.35253903, 0.67263305, 0.22658296, 0.88600004)
 theme_override_fonts/font = SubResource("FontVariation_vsb4k")
 theme_override_font_sizes/font_size = 52
 theme_override_icons/icon = SubResource("CanvasTexture_lti8b")
 text = "Play"
 
 [node name="Exit" type="Button" parent="." unique_id=792627933]
-offset_left = 163.0
-offset_top = 363.0
-offset_right = 1020.0
-offset_bottom = 518.0
-theme_override_colors/font_color = Color(0.6117647, 0.8980392, 1, 1)
+offset_left = 465.0
+offset_top = 492.0
+offset_right = 741.0
+offset_bottom = 600.0
+theme_override_colors/font_color = Color(0.661816, 0.062304832, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0.2800172, 0, 0.025401173, 0.4)
 theme_override_fonts/font = SubResource("FontVariation_vsb4k")
 theme_override_font_sizes/font_size = 52
 theme_override_icons/icon = SubResource("CanvasTexture_lti8b")
-text = "Quit
-"
+text = "Exit"
+
+[node name="Label" type="Label" parent="." unique_id=1121393985]
+offset_left = 224.0
+offset_top = -23.0
+offset_right = 989.0
+offset_bottom = 263.0
+theme_override_colors/font_color = Color(1, 0.49019608, 0, 0.7529412)
+theme_override_font_sizes/font_size = 200
+text = "Game"
+horizontal_alignment = 1
+vertical_alignment = 1
+max_lines_visible = 6
 
 [connection signal="pressed" from="play" to="." method="_on_play_pressed"]
 [connection signal="button_down" from="Exit" to="." method="_on_exit_button_down"]

@@ -15,6 +15,10 @@ run/main_scene="uid://f8p20v10kcvp"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[gui]
+
+theme/custom="uid://cn1svi618w7fo"
+
 [input]
 
 up={
