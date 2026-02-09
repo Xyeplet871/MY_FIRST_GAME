@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://hs1yo3y8nhqe"]
+
+[ext_resource type="Texture2D" uid="uid://bausswiuwaxvf" path="res://menu/fon_menu/Web_Photo_Editor.jpg" id="1_ufg0w"]
+
+[node name="Settings_menu" type="Node" unique_id=428134176]
+
+[node name="WebPhotoEditor" type="Sprite2D" parent="." unique_id=368156393]
+position = Vector2(573.5, 321.5)
+scale = Vector2(4.480769, 4.8308825)
+texture = ExtResource("1_ufg0w")
+
+[node name="Button" type="Button" parent="." unique_id=1972890195]
+offset_left = 255.0
+offset_top = 86.0
+offset_right = 943.0
+offset_bottom = 250.0
+theme_override_colors/font_color = Color(9.18376, 9.37368, 8.951634, 1)
+theme_override_font_sizes/font_size = 63
+text = "Language"
