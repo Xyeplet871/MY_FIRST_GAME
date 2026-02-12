@@ -25,3 +25,8 @@ tile_map_data = PackedByteArray("AAAAACEAAAAAAAAAAAAAACIAAAAAAAEAAAAAACMAAAAAAAE
 tile_set = ExtResource("1_vonw3")
 
 [node name="Player" parent="." unique_id=650985353 instance=ExtResource("3_oi3di")]
+
+[node name="PixelButtom" type="Sprite2D" parent="." unique_id=1216267430]
+position = Vector2(237.25, 437.875)
+scale = Vector2(187.75002, -10.874999)
+region_enabled = true
