@@ -3,24 +3,6 @@
 [ext_resource type="Texture2D" uid="uid://s0xptk8b5dv8" path="res://sprites/solo sprites/PORTAL BLUE-Sheet.png" id="1_0r486"]
 
 [sub_resource type="GDScript" id="GDScript_0r486"]
-script/source = "extends Area2D
-
-@export var target_scene_path: String = \"res://lvl_2.tscn\"
-
-func _ready():
-	body_entered.connect(_on_body_entered)
-
-func _on_body_entered(body):
-	if body.is_in_group(\"player\"):
-		get_tree().change_scene_to_file(target_scene_path)
-
-
-func _on_signal_area_enterned_(area):
-	if area.iss_in_group(\"player\"):
-		position.x=0
-		position.y=500
-		
-"
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ef3v5"]
 radius = 4.558403
@@ -92,7 +74,7 @@ animations = [{
 
 [node name="Portal" type="Node2D" unique_id=230212081]
 
-[node name="Area2D" type="Area2D" parent="." unique_id=868778994 groups=["port"]]
+[node name="Area2D" type="Area2D" parent="." unique_id=868778994]
 script = SubResource("GDScript_0r486")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1074509854]
@@ -104,4 +86,6 @@ shape = SubResource("CapsuleShape2D_ef3v5")
 scale = Vector2(1, 1.078125)
 sprite_frames = SubResource("SpriteFrames_3x30s")
 animation = &"def"
-frame_progress = 0.8451034
+frame_progress = 0.7479874
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

@@ -37,6 +37,11 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		sprite.play(\"idle\")
 	move_and_slide()
+
+
+func _ready():
+	if Global.spawn_position != Vector2.ZERO:
+		global_position = Global.spawn_position
 "
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dw050"]
