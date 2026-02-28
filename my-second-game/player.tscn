@@ -325,7 +325,7 @@ animations = [{
 "speed": 10.0
 }]
 
-[node name="Player" type="CharacterBody2D" unique_id=650985353]
+[node name="Player" type="CharacterBody2D" unique_id=650985353 groups=["player"]]
 script = SubResource("GDScript_hqtel")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=353579188]
