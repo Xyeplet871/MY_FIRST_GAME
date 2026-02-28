@@ -9,7 +9,7 @@
 script/source = "extends CharacterBody2D
 
 
-const SPEED = 300.0
+const SPEED = 250.0
 const JUMP_VELOCITY = -400.0
 
 @onready var sprite =$AnimatedSprite2D;
@@ -339,3 +339,7 @@ animation = &"attack"
 frame_progress = 0.027356926
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=448174403]
+offset = Vector2(100, -100)
+zoom = Vector2(1.6, 1.9)
+limit_left = -100
+drag_horizontal_enabled = true

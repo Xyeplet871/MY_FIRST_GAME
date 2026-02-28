@@ -2,18 +2,41 @@
 
 [ext_resource type="Texture2D" uid="uid://b1xsn5ne8g1n7" path="res://sprites/zadniy_fon/imgonline-com-ua-Blur-8nAssK1zHMjIv.jpg" id="1_ufg0w"]
 
+[sub_resource type="GDScript" id="GDScript_ufg0w"]
+script/source = "extends Node
+
+
+
+
+func _on_back_pressed() -> void:
+	get_tree().change_scene_to_file(\"res://menu.tscn\")
+"
+
 [node name="Settings_menu" type="Node" unique_id=428134176]
+script = SubResource("GDScript_ufg0w")
 
 [node name="ImgonlineComUaBlur8nAssK1zHMjIv" type="Sprite2D" parent="." unique_id=1972190865]
-position = Vector2(480.00003, 255.00002)
+position = Vector2(673, 399)
 scale = Vector2(2.2466667, 1.9132528)
 texture = ExtResource("1_ufg0w")
 
-[node name="Button" type="Button" parent="." unique_id=1972890195]
-offset_left = 255.0
-offset_top = 86.0
-offset_right = 943.0
-offset_bottom = 250.0
+[node name="language" type="Button" parent="." unique_id=1972890195]
+offset_left = 332.0
+offset_top = 230.0
+offset_right = 778.0
+offset_bottom = 311.33905
 theme_override_colors/font_color = Color(9.18376, 9.37368, 8.951634, 1)
 theme_override_font_sizes/font_size = 63
 text = "Language"
+
+[node name="back" type="Button" parent="." unique_id=420092716]
+anchors_preset = -1
+anchor_right = 0.007
+anchor_bottom = 0.006
+offset_left = 24.0
+offset_top = 17.0
+offset_right = 210.936
+offset_bottom = 108.112
+text = "back"
+
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]
