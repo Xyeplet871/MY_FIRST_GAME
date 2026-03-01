@@ -13,21 +13,25 @@ size = Vector2(878.0625, 76)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0b4ue"]
 size = Vector2(17, 556.5)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_f2txt"]
-size = Vector2(20, 30)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1ainy"]
+size = Vector2(15, 189)
 
 [node name="level" type="Node" unique_id=139392946]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1193341941]
 physics_material_override = SubResource("PhysicsMaterial_vonw3")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1511472870]
+[node name="poverhnost" type="CollisionShape2D" parent="StaticBody2D" unique_id=1511472870]
 position = Vector2(438.96875, 619)
 shape = SubResource("RectangleShape2D_oi3di")
 
 [node name="granitsa" type="CollisionShape2D" parent="StaticBody2D" unique_id=493883997]
 position = Vector2(-6.5, 391.25)
 shape = SubResource("RectangleShape2D_0b4ue")
+
+[node name="granitsa2" type="CollisionShape2D" parent="StaticBody2D" unique_id=1541640619]
+position = Vector2(886, 495)
+shape = SubResource("RectangleShape2D_1ainy")
 
 [node name="TileMap" type="TileMap" parent="." unique_id=1888491064]
 format = 2
@@ -44,11 +48,8 @@ region_enabled = true
 
 [node name="BG" parent="." unique_id=14542392 instance=ExtResource("3_0b4ue")]
 
-[node name="portall" parent="." unique_id=817424439 instance=ExtResource("4_0b4ue")]
-position = Vector2(868, 571)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="portall" unique_id=266710893]
-shape = SubResource("RectangleShape2D_f2txt")
-
 [node name="Player" parent="." unique_id=650985353 instance=ExtResource("3_oi3di")]
 position = Vector2(69, 512)
+
+[node name="portal" parent="." unique_id=98270200 instance=ExtResource("4_0b4ue")]
+position = Vector2(862, 563)

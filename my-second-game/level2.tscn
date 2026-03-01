@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://508wof3po6u0" path="res://sprites/Tilemaps/Png Files/stone_drygrass_alt_tileset_2.png" id="1_y0xe8"]
 [ext_resource type="PackedScene" uid="uid://64myvytrvf5d" path="res://player.tscn" id="2_r40rm"]
+[ext_resource type="PackedScene" uid="uid://cpcefcafln5xw" path="res://lvl2par.tscn" id="3_6q4t8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dbx23"]
 size = Vector2(1152, 20)
@@ -48,3 +49,6 @@ layer_0/tile_data = PackedInt32Array(2555904, 0, 1, 2621440, 0, 2, 2555905, 6553
 tile_set = SubResource("TileSet_l31ol")
 
 [node name="Player" parent="." unique_id=650985353 instance=ExtResource("2_r40rm")]
+position = Vector2(41, 560)
+
+[node name="ParallaxBackground" parent="." unique_id=482968313 instance=ExtResource("3_6q4t8")]

@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cpcefcafln5xw"]
+
+[ext_resource type="Texture2D" uid="uid://cyq2yt0tx4svw" path="res://sprites/parallax/second/Tall Forest Files/Layers/back.png" id="1_21w4y"]
+[ext_resource type="Texture2D" uid="uid://d4ffoh50ka2qm" path="res://sprites/parallax/second/Tall Forest Files/Layers/far.png" id="2_lwa8a"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" unique_id=482968313]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="." unique_id=328009807]
+motion_scale = Vector2(0.5, 1)
+motion_mirroring = Vector2(1146.025, 0)
+
+[node name="Back" type="Sprite2D" parent="ParallaxLayer" unique_id=658490098]
+position = Vector2(576, 358.00003)
+scale = Vector2(7.958333, 2.9833333)
+texture = ExtResource("1_21w4y")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="." unique_id=708696929]
+motion_mirroring = Vector2(1146.025, 0)
+
+[node name="Far" type="Sprite2D" parent="ParallaxLayer2" unique_id=1490389718]
+position = Vector2(574.00006, 388.00003)
+scale = Vector2(6.528409, 3.5583332)
+texture = ExtResource("2_lwa8a")
