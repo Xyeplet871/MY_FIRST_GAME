@@ -4,16 +4,21 @@
 script/source = "extends Area2D
 
 
-@export var nextSceneName: String
+@export var target_scene_path: String = \"res://Level2.tscn\"
 
-func _on_player_entered(body: Node2D) -> void:
-	var nextScene = load(\"res://scene/\" + nextSceneName + \".tscn\")
-	get_tree().change_scene_to_packed(nextScene)
+
+
+
+func _ready():
+	body_entered.connect(_on_body_entered)
+
+func _on_body_entered(body):if body.name == \"Player\":  # Проверяем, что это игрок
+	get_tree().change_scene_to_file(target_scene_path)
 "
 
 [node name="portal" type="Area2D" unique_id=817424439]
 collision_layer = 2
 script = SubResource("GDScript_jqdra")
-nextSceneName = "lvl_2"
+target_scene_path = "res://level2.tscn"
 
 [connection signal="body_entered" from="." to="." method="_on_player_entered"]

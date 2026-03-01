@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://coawlj7o5ume"]
 
-[ext_resource type="Texture2D" uid="uid://508wof3po6u0" path="res://sprites/Tilemaps/Png Files/stone_drygrass_alt_tileset_2.png" id="1_031k3"]
+[ext_resource type="Texture2D" uid="uid://508wof3po6u0" path="res://sprites/Tilemaps/Png Files/stone_drygrass_alt_tileset_2.png" id="1_y0xe8"]
+[ext_resource type="PackedScene" uid="uid://64myvytrvf5d" path="res://player.tscn" id="2_r40rm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dbx23"]
 size = Vector2(1152, 20)
@@ -9,7 +10,7 @@ size = Vector2(1152, 20)
 size = Vector2(20, 529)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1v3ac"]
-texture = ExtResource("1_031k3")
+texture = ExtResource("1_y0xe8")
 0:1/0 = 0
 1:1/0 = 0
 2:1/0 = 0
@@ -26,7 +27,7 @@ texture = ExtResource("1_031k3")
 [sub_resource type="TileSet" id="TileSet_l31ol"]
 sources/0 = SubResource("TileSetAtlasSource_1v3ac")
 
-[node name="Node" type="Node" unique_id=318342481]
+[node name="level2" type="Node" unique_id=318342481]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=51141946]
 
@@ -45,3 +46,5 @@ layer_0/tile_data = PackedInt32Array(2555904, 0, 1, 2621440, 0, 2, 2555905, 6553
 
 [node name="TileMapLayer" type="TileMapLayer" parent="TileMap" unique_id=46644837]
 tile_set = SubResource("TileSet_l31ol")
+
+[node name="Player" parent="." unique_id=650985353 instance=ExtResource("2_r40rm")]
