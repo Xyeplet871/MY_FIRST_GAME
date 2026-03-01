@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://c2joledbwd0fg"]
+
+[sub_resource type="GDScript" id="GDScript_jqdra"]
+script/source = "extends Area2D
+
+
+@export var nextSceneName: String
+
+func _on_player_entered(body: Node2D) -> void:
+	var nextScene = load(\"res://scene/\" + nextSceneName + \".tscn\")
+	get_tree().change_scene_to_packed(nextScene)
+"
+
+[node name="portal" type="Area2D" unique_id=817424439]
+collision_layer = 2
+script = SubResource("GDScript_jqdra")
+nextSceneName = "lvl_2"
+
+[connection signal="body_entered" from="." to="." method="_on_player_entered"]
