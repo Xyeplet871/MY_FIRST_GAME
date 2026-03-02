@@ -1,62 +1,49 @@
 [gd_scene format=3 uid="uid://f8p20v10kcvp"]
 
 [ext_resource type="Script" uid="uid://cnu4do1j40ojs" path="res://menu.gd" id="1_lti8b"]
-[ext_resource type="Texture2D" uid="uid://bkmyo0nse6pli" path="res://menu/sprite menu/Button_Zombie.png" id="2_ouk20"]
+[ext_resource type="Texture2D" uid="uid://by2f2q1gcm4kx" path="res://menu/fon_menu/сгенерируй пиксельный 2д средневековый городок _Kandinsky 3.1.jpg" id="5_ytr4m"]
 
 [node name="menu" type="Node2D" unique_id=1872982590]
 script = ExtResource("1_lti8b")
 
-[node name="Label" type="Label" parent="." unique_id=1121393985]
-offset_left = 330.0
-offset_top = -2.0
-offset_right = 916.0
-offset_bottom = 224.0
-size_flags_stretch_ratio = 0.0
-theme_override_colors/font_color = Color(0.8030579, 0.6205015, 0.2969681, 0.7529412)
-theme_override_font_sizes/font_size = 200
-text = "Game"
-horizontal_alignment = 1
-vertical_alignment = 1
-max_lines_visible = 6
-
-[node name="ButtonZombie" type="Sprite2D" parent="." unique_id=330811340]
-position = Vector2(1589, 512)
-scale = Vector2(0.40156248, 0.8624999)
-texture = ExtResource("2_ouk20")
-
-[node name="start" type="Button" parent="." unique_id=1284892722]
-offset_left = 510.0
-offset_top = 190.0
-offset_right = 790.0
-offset_bottom = 270.0
-theme_override_font_sizes/font_size = 56
-text = "Start"
-
-[node name="settings" type="Button" parent="." unique_id=1557270374]
-offset_left = 510.0
-offset_top = 390.0
-offset_right = 790.0
-offset_bottom = 470.0
-theme_override_font_sizes/font_size = 56
-text = "Settings"
-
-[node name="training" type="Button" parent="." unique_id=912247187]
-offset_left = 510.0
-offset_top = 290.0
-offset_right = 790.0
-offset_bottom = 370.0
-theme_override_font_sizes/font_size = 56
-text = "Training"
+[node name="fon" type="Sprite2D" parent="." unique_id=982121711]
+position = Vector2(579.5, 449)
+scale = Vector2(1.1298828, 0.8808593)
+texture = ExtResource("5_ytr4m")
 
 [node name="exit" type="Button" parent="." unique_id=1234153697]
-offset_left = 510.0
+offset_left = 437.5
 offset_top = 490.0
-offset_right = 790.0
+offset_right = 717.5
 offset_bottom = 570.0
 theme_override_font_sizes/font_size = 56
 text = "Exit
 "
 
+[node name="start" type="Button" parent="." unique_id=1284892722]
+offset_left = 437.5
+offset_top = 190.0
+offset_right = 717.501
+offset_bottom = 270.0003
+theme_override_font_sizes/font_size = 56
+text = "Start"
+
+[node name="settings" type="Button" parent="." unique_id=1557270374]
+offset_left = 437.5
+offset_top = 390.0
+offset_right = 717.5
+offset_bottom = 470.0
+theme_override_font_sizes/font_size = 56
+text = "Settings"
+
+[node name="training" type="Button" parent="." unique_id=912247187]
+offset_left = 437.5
+offset_top = 290.0
+offset_right = 717.5
+offset_bottom = 370.0
+theme_override_font_sizes/font_size = 56
+text = "Training"
+
+[connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="settings" to="." method="_on_settings_pressed"]
-[connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
