@@ -3,19 +3,16 @@
 [ext_resource type="Script" uid="uid://cnu4do1j40ojs" path="res://menu.gd" id="1_lti8b"]
 [ext_resource type="Texture2D" uid="uid://bkmyo0nse6pli" path="res://menu/sprite menu/Button_Zombie.png" id="2_ouk20"]
 
-[sub_resource type="FontVariation" id="FontVariation_vsb4k"]
-
-[sub_resource type="CanvasTexture" id="CanvasTexture_lti8b"]
-
 [node name="menu" type="Node2D" unique_id=1872982590]
 script = ExtResource("1_lti8b")
 
 [node name="Label" type="Label" parent="." unique_id=1121393985]
-offset_left = 224.0
-offset_top = -23.0
-offset_right = 989.0
-offset_bottom = 263.0
-theme_override_colors/font_color = Color(1, 0.49019608, 0, 0.7529412)
+offset_left = 330.0
+offset_top = -2.0
+offset_right = 916.0
+offset_bottom = 224.0
+size_flags_stretch_ratio = 0.0
+theme_override_colors/font_color = Color(0.8030579, 0.6205015, 0.2969681, 0.7529412)
 theme_override_font_sizes/font_size = 200
 text = "Game"
 horizontal_alignment = 1
@@ -23,43 +20,43 @@ vertical_alignment = 1
 max_lines_visible = 6
 
 [node name="ButtonZombie" type="Sprite2D" parent="." unique_id=330811340]
-position = Vector2(588, 392)
+position = Vector2(1589, 512)
 scale = Vector2(0.40156248, 0.8624999)
 texture = ExtResource("2_ouk20")
 
-[node name="Exit" type="Button" parent="." unique_id=792627933]
-offset_left = 454.0
-offset_top = 471.0
-offset_right = 717.0
-offset_bottom = 577.0
-theme_override_colors/font_color = Color(0.661816, 0.062304832, 0, 1)
-theme_override_colors/icon_disabled_color = Color(0.2800172, 0, 0.025401173, 0.4)
-theme_override_fonts/font = SubResource("FontVariation_vsb4k")
-theme_override_font_sizes/font_size = 52
-theme_override_icons/icon = SubResource("CanvasTexture_lti8b")
-text = "Exit"
+[node name="start" type="Button" parent="." unique_id=1284892722]
+offset_left = 510.0
+offset_top = 190.0
+offset_right = 790.0
+offset_bottom = 270.0
+theme_override_font_sizes/font_size = 56
+text = "Start"
 
-[node name="settings" type="Button" parent="." unique_id=872083384]
-offset_left = 460.0
-offset_top = 323.0
-offset_right = 718.0
-offset_bottom = 435.0
-theme_override_colors/font_color = Color(0.6, 0.6, 0.6, 1)
-theme_override_font_sizes/font_size = 52
+[node name="settings" type="Button" parent="." unique_id=1557270374]
+offset_left = 510.0
+offset_top = 390.0
+offset_right = 790.0
+offset_bottom = 470.0
+theme_override_font_sizes/font_size = 56
 text = "Settings"
 
-[node name="play" type="Button" parent="." unique_id=916392895]
-offset_left = 460.0
-offset_top = 182.0
-offset_right = 718.8235
-offset_bottom = 292.0
-theme_override_colors/font_color = Color(0.35253903, 0.67263305, 0.22658296, 0.88600004)
-theme_override_fonts/font = SubResource("FontVariation_vsb4k")
-theme_override_font_sizes/font_size = 52
-theme_override_icons/icon = SubResource("CanvasTexture_lti8b")
-text = "Play"
+[node name="training" type="Button" parent="." unique_id=912247187]
+offset_left = 510.0
+offset_top = 290.0
+offset_right = 790.0
+offset_bottom = 370.0
+theme_override_font_sizes/font_size = 56
+text = "Training"
 
-[connection signal="button_down" from="Exit" to="." method="_on_exit_button_down"]
-[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
+[node name="exit" type="Button" parent="." unique_id=1234153697]
+offset_left = 510.0
+offset_top = 490.0
+offset_right = 790.0
+offset_bottom = 570.0
+theme_override_font_sizes/font_size = 56
+text = "Exit
+"
+
+[connection signal="pressed" from="start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="settings" to="." method="_on_settings_pressed"]
-[connection signal="pressed" from="play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
