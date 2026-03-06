@@ -3,6 +3,72 @@
 [ext_resource type="Script" uid="uid://cnu4do1j40ojs" path="res://menu.gd" id="1_lti8b"]
 [ext_resource type="Texture2D" uid="uid://by2f2q1gcm4kx" path="res://menu/fon_menu/сгенерируй пиксельный 2д средневековый городок _Kandinsky 3.1.jpg" id="5_ytr4m"]
 
+[sub_resource type="GDScript" id="GDScript_ouk20"]
+script/source = "extends Button
+
+
+
+func _on_mouse_entered() -> void:
+	var tween = create_tween()
+	tween.tween_property(self, \"scale\", Vector2(1.15, 1.15), 0.15)
+
+
+
+func _on_mouse_exited() -> void:
+	var tween = create_tween()
+	tween.tween_property(self, \"scale\", Vector2(1, 1), 0.15)
+"
+
+[sub_resource type="GDScript" id="GDScript_mae5d"]
+script/source = "extends Button
+
+
+
+func _on_mouse_entered() -> void:
+	var tween = create_tween()
+	tween.tween_property(self, \"scale\", Vector2(1.15, 1.15), 0.15)
+
+
+func _on_mouse_exited() -> void:
+	var tween = create_tween()
+	tween.tween_property(self, \"scale\", Vector2(1, 1), 0.15)
+"
+
+[sub_resource type="GDScript" id="GDScript_4hy44"]
+script/source = "extends Button
+
+
+
+
+func _on_mouse_entered() -> void:
+	var tween = create_tween()
+	tween.tween_property(self, \"scale\", Vector2(1.15, 1.15), 0.15)
+
+
+func _on_mouse_exited() -> void:
+	var tween = create_tween()
+	tween.tween_property(self, \"scale\", Vector2(1, 1), 0.15)
+"
+
+[sub_resource type="GDScript" id="GDScript_ytr4m"]
+script/source = "extends Button
+
+
+
+
+func _on_mouse_entered() -> void:
+	var tween = create_tween()
+	tween.tween_property(self, \"scale\", Vector2(1.15, 1.15), 0.15)
+
+
+
+
+
+func _on_mouse_exited() -> void:
+	var tween = create_tween()
+	tween.tween_property(self, \"scale\", Vector2(1, 1), 0.15)
+"
+
 [node name="menu" type="Node2D" unique_id=1872982590]
 script = ExtResource("1_lti8b")
 
@@ -16,34 +82,52 @@ offset_left = 437.5
 offset_top = 490.0
 offset_right = 717.5
 offset_bottom = 570.0
+pivot_offset = Vector2(140, 40)
 theme_override_font_sizes/font_size = 56
 text = "Exit
 "
+script = SubResource("GDScript_ouk20")
 
 [node name="start" type="Button" parent="." unique_id=1284892722]
 offset_left = 437.5
 offset_top = 190.0
 offset_right = 717.501
 offset_bottom = 270.0003
+pivot_offset = Vector2(140, 40)
 theme_override_font_sizes/font_size = 56
 text = "Start"
+script = SubResource("GDScript_mae5d")
 
 [node name="settings" type="Button" parent="." unique_id=1557270374]
 offset_left = 437.5
 offset_top = 390.0
 offset_right = 717.5
 offset_bottom = 470.0
+pivot_offset = Vector2(140, 40)
 theme_override_font_sizes/font_size = 56
 text = "Settings"
+script = SubResource("GDScript_4hy44")
 
 [node name="training" type="Button" parent="." unique_id=912247187]
 offset_left = 437.5
 offset_top = 290.0
 offset_right = 717.5
 offset_bottom = 370.0
+pivot_offset = Vector2(140, 40)
 theme_override_font_sizes/font_size = 56
 text = "Training"
+script = SubResource("GDScript_ytr4m")
 
+[connection signal="mouse_entered" from="exit" to="." method="_on_exit_mouse_entered"]
+[connection signal="mouse_entered" from="exit" to="exit" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="exit" to="." method="_on_exit_mouse_exited"]
+[connection signal="mouse_exited" from="exit" to="exit" method="_on_mouse_exited"]
 [connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
+[connection signal="mouse_entered" from="start" to="start" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="start" to="start" method="_on_mouse_exited"]
 [connection signal="pressed" from="start" to="." method="_on_start_pressed"]
+[connection signal="mouse_entered" from="settings" to="settings" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="settings" to="settings" method="_on_mouse_exited"]
 [connection signal="pressed" from="settings" to="." method="_on_settings_pressed"]
+[connection signal="mouse_entered" from="training" to="training" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="training" to="training" method="_on_mouse_exited"]
