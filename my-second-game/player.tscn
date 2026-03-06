@@ -346,8 +346,9 @@ animation = &"attack"
 frame_progress = 0.027356926
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=448174403]
-offset = Vector2(100, -100)
-zoom = Vector2(1.9, 1.7)
+offset = Vector2(100, -80)
+zoom = Vector2(1.9, 1.9)
 limit_left = -100
 limit_right = 770
 drag_vertical_enabled = true
+drag_top_margin = 1.0
